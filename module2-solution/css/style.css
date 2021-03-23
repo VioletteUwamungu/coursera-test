@@ -1,1 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 0;
+}
+
+h1 {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 46px;
+	
+}
+p{
+	padding: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 19px;
+
+}
+
+#chicken, #beef, #suchi {
+  border: 1px solid black;
+  padding: 0px;
+  background-color:#808080;
+  width: 33.33%;
+  height: 50%;
+  
+}
+#one, #two, #three {
+  	border: 1px solid black;
+  	text-align: center;
+  	padding-right: 10px;
+  	margin-left: 65%;
+  	font-family: Arial, Helvetica, sans-serif;
+  	font-size: 28px;
+}
+#one{
+		background-color: #F08080;
+	}
+#two{
+		background-color: #A52A2A;
+	}
+#three {
+		background-color: #F0E68C;
+	}
+
+@media (min-width: 1200px) {
+  #chicken, #beef, #suchi, {
+    float: left;
+    border: 1px solid black;
+  }
+	
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.flex-container {
+  display: flex;
+  
+}
+	#chicken,  #beef {
+    width: 50%;
+    height: auto;
+    display:table-cell;
+  }
+ 
+  #suchi {
+    width: 92%;
+    height: auto;
+    position: absolute;
+    bottom: -12px;
+    
+  }
+  #three{
+  	margin-left: 85%;
+  }
+ 
+}
+@media (max-width: 767px) {
+  .flex-container {
+    flex-direction: column;
+
+  }
+  #chicken, #beef,#suchi {
+    width: 100%;
+    height: auto;
+ 
+  }
+  
+ #one, #two, #three{
+ 	margin-left: 75%;
+ }
+}
 

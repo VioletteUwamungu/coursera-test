@@ -2,8 +2,11 @@
   box-sizing: border-box;
   margin: 10px;
   padding: 0;
-}
 
+}
+body {
+	background-color: green;
+}
 h1 {
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
@@ -13,7 +16,7 @@ h1 {
 p{
 	padding: 10px;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 19px;
+	font-size: 16spx;
 
 }
 
@@ -70,7 +73,7 @@ p{
     width: 92%;
     height: auto;
     position: absolute;
-    bottom: -12px;
+    bottom: -3px;
     
   }
   #three{
